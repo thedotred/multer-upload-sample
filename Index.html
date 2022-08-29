@@ -1,0 +1,18 @@
+<!--
+    Note carefully, we are using action, method and enctype attributes 
+    in the HTML form element. All 3 attributes are very important.
+-->
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="avatar" />
+    <!-- 
+        Please note that, the name of the above
+        input field is 'upfile'. We need to specify 'upfile'
+        in the back-end controller. In this case, we need to 
+        speicfy 'upfile' in '/upload' route.
+    -->
+    <input type="submit" value="Click to upload"/>
+    <!-- 
+        The above input field's type must be 'submit',
+        otherwise form can not be submitted.
+    -->
+</form>
